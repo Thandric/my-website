@@ -25,21 +25,30 @@
     <h2>Contact Me</h2>
     <p>If you'd like to get in touch, fill out the form below and I’ll get back to you soon.</p>
 
-    <form id="contact-form" action="https://formspree.io/f/xblqrbon" method="POST" class="contact-form">
+<form 
+  id="contact-form"
+  action="https://formspree.io/f/xblqrbon"
+  method="POST"
+  enctype="multipart/form-data"
+  class="contact-form"
+>
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required />
+  <input type="text" id="name" name="name" required>
 
   <label for="email">Email:</label>
-  <input type="email" id="email" name="_replyto" required />
+  <input type="email" id="email" name="_replyto" required>
 
   <label for="message">Message:</label>
   <textarea id="message" name="message" rows="5" required></textarea>
 
+  <label for="file">Attach a file (optional):</label>
+  <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+
   <button type="submit" class="btn">Send Message</button>
 </form>
 
-<!-- Add this empty div below the form -->
 <div id="form-status"></div>
+
 
 
     <a class="btn" href="index.html">Back to Home</a>
