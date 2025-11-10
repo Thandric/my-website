@@ -62,3 +62,10 @@ body{margin:0;color:var(--text);line-height:1.5}
   margin-top: 1rem;
   font-weight: bold;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem auto;
+}
