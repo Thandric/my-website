@@ -58,3 +58,7 @@ body{margin:0;color:var(--text);line-height:1.5}
   width: fit-content;
   align-self: flex-end;
 }
+#form-status {
+  margin-top: 1rem;
+  font-weight: bold;
+}
