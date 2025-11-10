@@ -29,5 +29,9 @@ if (form) {
       status.textContent = "⚠️ Network error — please try again later.";
       status.style.color = "orange";
     }
+    setTimeout(() => {
+  status.textContent = "";
+}, 5000); // Clear message after 5 seconds
+
   });
 }
